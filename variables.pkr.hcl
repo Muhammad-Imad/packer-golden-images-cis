@@ -83,7 +83,7 @@ variable "cis_profile" {
 
   validation {
     condition     = contains(["level1_server", "level2_server"], var.cis_profile)
-    error_message = "cis_profile must be either level1_server or level2_server."
+    error_message = "The cis_profile must be either level1_server or level2_server."
   }
 }
 
