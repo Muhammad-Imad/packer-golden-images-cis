@@ -90,10 +90,10 @@ variable "cis_profile" {
 variable "common_tags" {
   type = map(string)
   default = {
-    Project   = "golden-images"
-    ManagedBy = "packer"
+    Project    = "golden-images"
+    ManagedBy  = "packer"
     Compliance = "CIS"
-    Owner     = "platform-engineering"
+    Owner      = "platform-engineering"
   }
   description = "Tags applied to the AMI, snapshots, and the builder instance."
 }

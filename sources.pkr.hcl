@@ -57,10 +57,10 @@ source "amazon-ebs" "ubuntu" {
     encrypted             = var.encrypt_boot
   }
 
-  run_tags         = local.run_tags
-  run_volume_tags  = local.run_tags
-  tags             = local.ami_tags
-  snapshot_tags    = local.ami_tags
+  run_tags        = local.run_tags
+  run_volume_tags = local.run_tags
+  tags            = local.ami_tags
+  snapshot_tags   = local.ami_tags
 }
 
 // --- Red Hat Enterprise Linux 9 ----------------------------------------------

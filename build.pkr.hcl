@@ -24,7 +24,7 @@ build {
 
   // 2. Apply CIS hardening. CIS_PROFILE selects level1 vs level2 controls.
   provisioner "shell" {
-    execute_command  = "sudo -E -S bash '{{ .Path }}'"
+    execute_command   = "sudo -E -S bash '{{ .Path }}'"
     expect_disconnect = true
     environment_vars = [
       "CIS_PROFILE=${var.cis_profile}",
